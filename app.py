@@ -212,8 +212,8 @@ def documents():
         lines = [l for l in doc_text.split('\n') if l.strip()]
         doc_list.append({"id": doc_id, "text": doc_text, "preview": lines[:2], "source": source})
     return render_template("documents.html", doc_list=doc_list)
-
-
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
+
 # v2 - added upload and delete functionality
