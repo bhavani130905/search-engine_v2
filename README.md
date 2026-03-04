@@ -7,26 +7,18 @@
 ![Railway](https://img.shields.io/badge/Deployed-Railway-purple?logo=railway)
 ![GitHub](https://img.shields.io/badge/Version_Control-GitHub-black?logo=github)
 
-<<<<<<< HEAD
 ---
-=======
--  Search across documents using TF-IDF + Cosine Similarity
--  Upload your own `.txt` documents
--  Delete uploaded documents
-- 5 default documents included
-- Shows all calculation tables: Inverted Index, TF, IDF, TF-IDF, Query Vector
->>>>>>> 2c216ccd2d7ed8164663601e87dcbae6155b0011
 
 ##  Live Demo
 
-**[https://web-production-aa438.up.railway.app/]**
+ **https://web-production-aa438.up.railway.app/**
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### Search Page
-![Search Page](screenshots/search_page.png)
+![Search Page](screenshots/search_engine.png)
 
 ### Search Results with TF-IDF Tables
 ![Search Results](screenshots/search_results.png)
@@ -36,9 +28,9 @@
 
 ---
 
-## ✨ Features
+## Features
 
--  Search across documents using **TF-IDF + Cosine Similarity**
+- Search across documents using **TF-IDF + Cosine Similarity**
 - **Inverted Index** construction from document collection
 - **Upload your own `.txt` documents** dynamically
 - **Delete uploaded documents** from the collection
@@ -60,7 +52,7 @@
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 search_engine_v2/
@@ -69,20 +61,19 @@ search_engine_v2/
 ├── requirements.txt        # Dependencies
 ├── README.md
 ├── .gitignore
-├── default_docs/           # Default document collection
+├── default_docs/
 │   ├── d1.txt
 │   ├── d2.txt
 │   ├── d3.txt
 │   ├── d4.txt
 │   └── d5.txt
-├── uploads/                # User-uploaded files
+├── uploads/
 └── templates/
-    ├── index.html          # Search interface
-    └── documents.html      # Document viewer + upload UI
+    ├── index.html
+    └── documents.html
 ```
 
 ---
-
 ## Installation & Run Locally
 
 **1. Clone the repository**
@@ -101,14 +92,10 @@ pip install -r requirements.txt
 python app.py
 ```
 
-<<<<<<< HEAD
 **4. Open in browser**
 ```
 http://127.0.0.1:5000
 ```
-=======
-
->>>>>>> 2c216ccd2d7ed8164663601e87dcbae6155b0011
 
 ---
 
@@ -127,14 +114,6 @@ Cosine Similarity Scoring
     ↓
 Ranked Document Results
 ```
-## How It Works
-
-1. Load default + uploaded documents
-2. Preprocess — lowercase, remove stopwords
-3. Build Inverted Index
-4. Calculate TF, IDF, TF-IDF
-5. Convert query to TF-IDF vector
-6. Rank documents by Cosine Similarity
 
 | Step | Formula |
 |---|---|
@@ -149,7 +128,6 @@ Ranked Document Results
 
 Deployed on **Railway** — [railway.app](https://railway.app)
 
-Steps followed:
 1. Added `Procfile`: `web: python app.py`
 2. Configured `PORT` environment variable in `app.py`
 3. Connected GitHub repo to Railway
@@ -157,11 +135,11 @@ Steps followed:
 
 ---
 
----
 
-## References
+##  References
 
 - Manning, Raghavan & Schütze — *Introduction to Information Retrieval*, Cambridge University Press
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [Railway Documentation](https://docs.railway.app/)
-## Done under assignment for Information Retrieval
+
+** Information retrieval **
