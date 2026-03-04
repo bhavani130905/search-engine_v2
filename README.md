@@ -51,4 +51,4 @@ Open: **http://127.0.0.1:5000**
 
 ## Deployment
 
-Deployed on PythonAnywhere: `https://<username>.pythonanywhere.com`
+Deployed on Railway:  https://web-production-aa438.up.railway.app/
