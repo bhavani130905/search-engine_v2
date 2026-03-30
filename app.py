@@ -216,5 +216,10 @@ if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=False, host='0.0.0.0', port=port)
 
+import time
+start = time.perf_counter()
+tokenized, vocab, inv_index, idf, df_counts, tfidf_vecs = build_model(documents, doc_ids)
+print(f"build_model: {(time.perf_counter()-start)*1000:.2f} ms")
+
 # v2 - added upload and delete functionality
 # Predefined stopwords for preprocessing
